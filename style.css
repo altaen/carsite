@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*altta scrol çıkarsa, ekranı tam yapmak için */
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("./arkaplan.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+      /* arkaplanı ortalamak için */
+}
+
+p{
+    font-size: 10px;
+    color: #fff;
+    line-height: 16px;  /*satır yüksekliği*/
+
+}
+.navbar{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* öğeler çok yukardaydı biraz daha aşşa ortaladı.*/
+    height: 12%;
+}
+
+#logo{
+    width: 100px ;
+    border-radius: 10%;
+}
+
+nav ul{
+    list-style-type: none; /*önündeki noktaları kaldırır*/
+    display: flex; /* alt alta çıkan ögeleri yanyana yazar*/
+    column-gap: 20px; /*li lerin arasına boşluk bırakmak için*/
+    
+       
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /*alttaki çizgiyi kaldırır*/
+    
+}
+nav ul li a:hover {
+    color: #e66012;
+    transition: ease 0.5s;
+}    
+
+.row {
+    display: flex;
+    color:#fff;
+    column-gap: 20px;
+    height: 88%;
+    align-items: center; /* flex olduğu için ortlamak gerekir */
+}
+.col{
+    flex-basis: 50% ;  /*2kolonun ekranda kapladığı alanların oranı*/
+}
+h1 {color:#fff;
+    font-size: 100px;
+
+}
+.desc {
+    font-size: 16px;
+}
+.btn{
+    margin-top: 10px;
+    padding: 7px;
+    color: #000;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid red;
+    transition: ease 0.5s;
+    text-decoration: none; /*alt yazıyı kaldırmak için*/
+}
+.btn:hover{
+    background-color:#000;
+    cursor: pointer;
+    color:#fff;
+}
+.cards{
+    max-width: 500px;
+    margin:auto;
+}
+.card{
+    border: 1px solid red;
+    height: 200px;
+    width: 230px;
+    background-image: url("./pic-1.png");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+    position: relative; /*  buton dışarı çıkmasın diye*/
+     
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    border-color: #fff;
+    transition: ease 0.5s;
+}
+.card .card-head{
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 6px;
+    padding: 6px;
+}
+.card .card-bottom{
+    position: absolute;
+    bottom: 26px;
+}
+.card1{
+    background-image: url(./pic-1.png);
+}
+.card2{
+    background-image: url(./pic-2.png);
+}
+.card3{
+    background-image: url(./pic-3.png);
+}
+.card4{
+    background-image: url(./pic-4.png);
+}
